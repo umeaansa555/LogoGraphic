@@ -32,7 +32,6 @@ namespace LogoGraphic
             g.FillRectangle(redBrush, 30, 30, 100, 200);
             g.FillRectangle(blueBrush, 30, 30, 100, 200);
             g.DrawString("Domino's Pizza", drawFont, whiteBrush, 50, 40);
-
         }
     }
 }
