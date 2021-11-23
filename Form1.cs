@@ -29,14 +29,14 @@ namespace LogoGraphic
 
             g.Clear(Color.Black);
 
-            g.TranslateTransform(40, 60);
+            g.TranslateTransform(130, 80);
             g.RotateTransform(45);
-            g.FillRectangle(redBrush, 0, 0, 50, 50);
+            g.FillRectangle(redBrush, 0, 0, 50, 48);
             g.ResetTransform();
 
-            g.TranslateTransform(40, 60);
+            g.TranslateTransform(170, 30);
             g.RotateTransform(45);
-            g.FillRectangle(redBrush, 100, 90, 50, 50);
+            g.FillRectangle(redBrush, 0, 0, 50, 48);
             g.ResetTransform();
 
 
@@ -45,8 +45,8 @@ namespace LogoGraphic
             g.FillRectangle(blueBrush, 0, 0, 50, 100);
             g.ResetTransform();
 
-            g.FillEllipse(whiteBrush, 100, 100, 25, 25);
-            g.FillEllipse(whiteBrush, 150, 50, 25, 25);
+            g.FillEllipse(whiteBrush, 130, 130, 15, 15);
+            g.FillEllipse(whiteBrush, 160, 70, 15, 15);
 
             g.TranslateTransform(170, 170);
             g.RotateTransform(-45);
