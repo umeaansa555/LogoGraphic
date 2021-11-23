@@ -23,27 +23,33 @@ namespace LogoGraphic
             SolidBrush redBrush = new SolidBrush(Color.Red);
             SolidBrush blueBrush = new SolidBrush(Color.Blue);
 
-            Font drawFont = new Font("Arial", 16, FontStyle.Bold);
+            Font drawFont = new Font("Arial", 12, FontStyle.Bold);
 
             SolidBrush whiteBrush = new SolidBrush(Color.White);
 
             g.Clear(Color.Black);
 
-            //g.RotateTransform(45);
-            g.FillRectangle(redBrush, 150, 30, 50, 50);
-            //g.RotateTransform(45);
-            g.FillRectangle(redBrush, 130, 90, 50, 50);
+            g.TranslateTransform(40, 60);
+            g.RotateTransform(45);
+            g.FillRectangle(redBrush, 0, 0, 100, 100);
+            g.ResetTransform();
+
+            g.FillRectangle(redBrush, 0, 90, 50, 100);
 
             
-            //g.TranslateTransform(60, 60);
-            g.FillRectangle(blueBrush, 0, 0, 50, 100);
+            g.TranslateTransform(80, 100);
+            g.RotateTransform(45);
+            g.FillRectangle(blueBrush, 0, 0, 50, 200);
+            g.ResetTransform();
 
-            g.FillEllipse(whiteBrush, 50, 25, 25, 25);
-            g.FillEllipse(whiteBrush, 70, 25, 25, 25);
+            g.FillEllipse(whiteBrush, 100, 100, 25, 25);
+            g.FillEllipse(whiteBrush, 150, 50, 25, 25);
 
-            g.TranslateTransform(300, 300);
+            g.TranslateTransform(200, 200);
             g.RotateTransform(-45);
             g.DrawString("Domino's Pizza", drawFont, whiteBrush, 0, 0);
+            g.ResetTransform();
+
         }
     }
 }
