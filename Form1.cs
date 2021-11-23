@@ -45,7 +45,8 @@ namespace LogoGraphic
             g.FillRectangle(blueBrush, 0, 0, 50, 100);
             g.ResetTransform();
 
-            g.FillEllipse(whiteBrush, 140, 120, 15, 15);
+            g.FillEllipse(whiteBrush, 130, 120, 15, 15);
+            g.FillEllipse(whiteBrush, 150, 120, 15, 15);
             g.FillEllipse(whiteBrush, 180, 80, 15, 15);
 
             g.TranslateTransform(170, 170);
