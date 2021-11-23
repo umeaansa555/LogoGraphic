@@ -29,14 +29,14 @@ namespace LogoGraphic
 
             g.Clear(Color.Black);
 
-            g.TranslateTransform(130, 80);
+            g.TranslateTransform(150, 90);
             g.RotateTransform(45);
-            g.FillRectangle(redBrush, 0, 0, 50, 48);
+            g.FillRectangle(redBrush, 0, 0, 50, 50);
             g.ResetTransform();
 
-            g.TranslateTransform(170, 30);
+            g.TranslateTransform(190, 50);
             g.RotateTransform(45);
-            g.FillRectangle(redBrush, 0, 0, 50, 48);
+            g.FillRectangle(redBrush, 0, 0, 50, 50);
             g.ResetTransform();
 
 
